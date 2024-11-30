@@ -32,27 +32,53 @@
     cursor: pointer;
     display: flex;
     width: 260px;
-    border: 1px solid rgb(214, 214, 214);
+    border: 1.5px solid rgb(214, 214, 214);
     border-radius: 8px;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(238, 238, 238);
+    transition: all 0.2s ease;
+}
+
+#add_task:hover{
+    cursor: pointer;
+    display: flex;
+    width: 260px;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 8px;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 2px 1px 15px 1px rgb(129, 129, 129);
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+    
+
+    & #icon_container{
+        padding: 0 10px 0 10px;
+        color: rgb(255, 0, 0);
+        background-color: rgb(219, 219, 219);
+        font-size: 40px;
+        border: 1px solid rgb(131, 131, 131);
+        border-radius: 8px;
+        z-index: +1;
+    }
 }
 
 #icon_container{
     padding: 0 10px 0 10px;
     color: rgb(253, 53, 53);
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(226, 226, 226);
     font-size: 40px;
-    border: 1px solid rgb(202, 202, 202);
+    border: 1px solid rgb(231, 231, 231);
     border-radius: 8px;
     z-index: +1;
 }
 
 #text_container{
+    font-family: var(--font-family);
     height: auto;
     display: flex;
     align-items: center;
     margin-left: 20px;
     font-size: 22px;
+    font-weight: 400;
     margin-top: 10px;
     padding-right: 10px;
 }
