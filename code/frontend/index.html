@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="../../other/images/check-icon.png">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/application.css">
+    <script async src="script/add_task.js"></script>
     <!-- https://todoist.com/pt-BR -> site referencial -->
     <title>To do List</title>
 </head>
@@ -29,18 +30,27 @@
             </div>
         </section>
         <section>
-            <div class="form_task hide">
-                <form method="POST" action="../backend/create/create_task.php">
-                    <label for="task_name">Nome da Tarefa:</label>
-                    <input name="task_name" type="text">
-                    <label for="task_desc">Descrição da Tarefa:</label>
-                    <textarea name="task_desc"></textarea>
-                    <label for="">Pasta:</label>
-                    <select>
-                        <option>Geral</option>
-                    </select>
-
-                </form>
+            <div class="form_container hide">
+                <div class="form_task hide">
+                    <form method="POST" action="../backend/create/create_task.php">
+                        <label for="task_name">Nome da Tarefa:</label>
+                        <input name="task_name" type="text">
+                        <label for="task_desc">Descrição da Tarefa:</label>
+                        <textarea name="task_desc"></textarea>
+                        <label for="final_date">Data Final:</label>
+                        <input name="final_date" type="date">
+                        <label for="priority">Prioridade:</label>
+                        <select name="priority">
+                            <option>Baixa</option>
+                            <option>Média</option>
+                            <option>Alta</option>
+                        </select>
+                        <label for="folder">Pasta:</label>
+                        <select name="folder">
+                            <option>Geral</option>
+                        </select>
+                    </form>
+                </div>
             </div>
         </section>
     </section>
