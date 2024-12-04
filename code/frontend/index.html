@@ -12,12 +12,12 @@
 </head>
 <body>
     <section id="application">
-        <div id="title_container">
+        <div class="title_container">
             <div id="title">
                 <p>Tarefas</p>
             </div>
         </div>
-        <section id="principal">
+        <section class="principal">
             <div id="add_task_container">
                 <button id="add_task">
                     <div id="icon_container">
@@ -38,15 +38,17 @@
                                 <label for="task_name">Nome da Tarefa:</label>
                                 <input name="task_name" type="text">
                             </div>
-                            <div>
-                                <label for="task_desc">Descrição da Tarefa:</label>
+                            <div id="desc">
+                                <div>
+                                    <label for="task_desc">Descrição da Tarefa:</label>
+                                </div>
                                 <textarea name="task_desc"></textarea>
                             </div>
-                            <div>
+                            <div id="date">
                                 <label for="final_date">Data Final:</label>
                                 <input name="final_date" type="date">
                             </div>
-                            <div>
+                            <div id="priority">
                                 <label for="priority">Prioridade:</label>
                                 <select name="priority">
                                     <option>Baixa</option>
@@ -54,7 +56,7 @@
                                     <option>Alta</option>
                                 </select>
                             </div>
-                            <div>
+                            <div id="folder">
                                 <label for="folder">Pasta:</label>
                                 <select name="folder">
                                     <option>Geral</option>
