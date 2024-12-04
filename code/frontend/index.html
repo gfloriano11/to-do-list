@@ -30,25 +30,37 @@
             </div>
         </section>
         <section>
-            <div class="form_container hide">
+            <div class="form_container">
                 <div class="form_task hide">
                     <form method="POST" action="../backend/create/create_task.php">
-                        <label for="task_name">Nome da Tarefa:</label>
-                        <input name="task_name" type="text">
-                        <label for="task_desc">Descrição da Tarefa:</label>
-                        <textarea name="task_desc"></textarea>
-                        <label for="final_date">Data Final:</label>
-                        <input name="final_date" type="date">
-                        <label for="priority">Prioridade:</label>
-                        <select name="priority">
-                            <option>Baixa</option>
-                            <option>Média</option>
-                            <option>Alta</option>
-                        </select>
-                        <label for="folder">Pasta:</label>
-                        <select name="folder">
-                            <option>Geral</option>
-                        </select>
+                        <div id="info">
+                            <div id="name"> 
+                                <label for="task_name">Nome da Tarefa:</label>
+                                <input name="task_name" type="text">
+                            </div>
+                            <div>
+                                <label for="task_desc">Descrição da Tarefa:</label>
+                                <textarea name="task_desc"></textarea>
+                            </div>
+                            <div>
+                                <label for="final_date">Data Final:</label>
+                                <input name="final_date" type="date">
+                            </div>
+                            <div>
+                                <label for="priority">Prioridade:</label>
+                                <select name="priority">
+                                    <option>Baixa</option>
+                                    <option>Média</option>
+                                    <option>Alta</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="folder">Pasta:</label>
+                                <select name="folder">
+                                    <option>Geral</option>
+                                </select>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

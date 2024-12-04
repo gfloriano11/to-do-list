@@ -32,7 +32,7 @@
     cursor: pointer;
     display: flex;
     width: 260px;
-    border: 1.5px solid rgb(214, 214, 214);
+    border: 1px solid rgb(162, 162, 162);
     border-radius: 8px;
     background-color: rgb(238, 238, 238);
     transition: all 0.2s ease;
@@ -91,6 +91,24 @@
 }
 
 .form_task{
-    background-color: red;
+    background-color: rgb(221, 218, 205);
     width: 500px;
+    height: 100%;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#name{
+    & label{
+
+    }
+
+    & input{
+
+    }
 }
