@@ -18,6 +18,7 @@ html, body{
     transition: all 0.5s ease;
     filter: blur(1.5px);
     pointer-events: none;
+    user-select: none;
 }
 
 .hide{
@@ -27,4 +28,22 @@ html, body{
 .central{
     position: relative;
     bottom: 60px;
+}
+
+.go_back_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 400;
+    width: 80px;
+    height: 30px;
+    border: 1px solid rgb(126, 126, 126);
+    border-radius: 12px;
+    background-color: rgb(244, 244, 244);
+    margin: 0 10px 0 10px;
 }
