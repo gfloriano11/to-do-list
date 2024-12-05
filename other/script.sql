@@ -19,3 +19,8 @@ CREATE TABLE task(
     priority ENUM ("Baixa", "Média", "Alta") DEFAULT "Baixa",
     FOREIGN KEY (id_folder) REFERENCES folder(id)
 );
+
+INSERT INTO folder
+(folder_name)
+VALUES
+('geral');
