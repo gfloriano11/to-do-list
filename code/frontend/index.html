@@ -31,36 +31,42 @@
         </section>
         <section>
             <div class="form_container">
-                <div class="form_task hide">
+                <div class="form_task hide"  style="z-index: +10;">
                     <form method="POST" action="../backend/create/create_task.php">
-                        <div id="info">
-                            <div id="name"> 
-                                <label for="task_name">Nome da Tarefa:</label>
-                                <input name="task_name" type="text">
-                            </div>
-                            <div id="desc">
-                                <div>
-                                    <label for="task_desc">Descrição da Tarefa:</label>
+                        <div>
+                            <div id="info">
+                                <div id="name"> 
+                                    <label for="task_name">Nome da Tarefa:</label>
+                                    <input name="task_name" type="text">
                                 </div>
-                                <textarea name="task_desc"></textarea>
+                                <div id="desc">
+                                    <div>
+                                        <label for="task_desc">Descrição da Tarefa:</label>
+                                    </div>
+                                    <textarea name="task_desc"></textarea>
+                                </div>
+                                <div id="date">
+                                    <label for="final_date">Data Final:</label>
+                                    <input name="final_date" type="date">
+                                </div>
+                                <div id="priority">
+                                    <label for="priority">Prioridade:</label>
+                                    <select name="priority">
+                                        <option>Baixa</option>
+                                        <option>Média</option>
+                                        <option>Alta</option>
+                                    </select>
+                                </div>
+                                <div id="folder">
+                                    <label for="folder">Pasta:</label>
+                                    <select name="folder">
+                                        <option>Geral</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div id="date">
-                                <label for="final_date">Data Final:</label>
-                                <input name="final_date" type="date">
-                            </div>
-                            <div id="priority">
-                                <label for="priority">Prioridade:</label>
-                                <select name="priority">
-                                    <option>Baixa</option>
-                                    <option>Média</option>
-                                    <option>Alta</option>
-                                </select>
-                            </div>
-                            <div id="folder">
-                                <label for="folder">Pasta:</label>
-                                <select name="folder">
-                                    <option>Geral</option>
-                                </select>
+                            <div class="buttons">
+                                <button class="cancel form_button" type="button">Cancelar</button>
+                                <button class="form_button">Criar Tarefa</button>
                             </div>
                         </div>
                     </form>

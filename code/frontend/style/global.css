@@ -23,3 +23,8 @@ html, body{
 .hide{
     display: none;
 }
+
+.central{
+    position: relative;
+    bottom: 60px;
+}
