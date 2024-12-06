@@ -101,6 +101,7 @@
     }
 }
 
+
 .form_container{
     width: 100%;
     height: auto;
@@ -262,7 +263,7 @@
     align-items: center;
 }
 
-.form_button{
+.cancel_button{
     cursor: pointer;
     font-family: var(--font-family);
     font-weight: 400;
@@ -273,4 +274,18 @@
     border-radius: 12px;
     background-color: rgb(244, 244, 244);
     margin: 0 10px 0 10px;
+}
+
+.create_button{
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 400;
+    width: 120px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(253, 53, 53);
+    margin: 0 10px 0 10px;
+    color: white;
 }

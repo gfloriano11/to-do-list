@@ -3,7 +3,7 @@ const addTaskButton = document.querySelector('#add_task')
 const body = document.querySelector('body')
 const titleContainer = document.querySelector('.title_container')
 const principal = document.querySelector('.principal')
-const cancelButton = document.querySelector('.cancel')
+const cancelButton = document.querySelector('.cancel_button')
 
 addTaskButton.addEventListener('click', () => { // function add task
     form.classList.remove('hide')

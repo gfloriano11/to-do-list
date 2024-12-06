@@ -29,10 +29,10 @@
                 </button>
             </div>
         </section>
-        <section>
+        <section id="form">
             <div class="form_container">
                 <div class="form_task hide"  style="z-index: +10;">
-                    <form method="POST" action="../backend/create/create_task.php">
+                    <form method="POST" action="../backend/create/create_task.php" autocomplete="off">
                         <div>
                             <div id="info">
                                 <div id="name"> 
@@ -65,12 +65,17 @@
                                 </div>
                             </div>
                             <div class="buttons">
-                                <button class="cancel form_button" type="button">Cancelar</button>
-                                <button class="form_button">Criar Tarefa</button>
+                                <button class="cancel_button" type="button">Cancelar</button>
+                                <button class="create_button">Criar Tarefa</button>
                             </div>
                         </div>
                     </form>
                 </div>
+            </div>
+        </section>
+        <section id="tasks">
+            <div class="task_container">
+                <
             </div>
         </section>
     </section>
