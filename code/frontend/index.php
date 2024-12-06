@@ -83,14 +83,18 @@
             ?>
 
             <div class="task_container">
-                <div class="check">
-                    <input type="checkbox" style="border-radius: 20px">
-                </div>
-                <div class="task_name">
-                    <p>oi</p>
-                </div>
-                <div class="task_desc">
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                <div class="task" style="display: flex;">
+                    <div class="check">
+                        <input type="checkbox" style="border-radius: 20px">
+                    </div>
+                    <div class="info_container">
+                        <div class="task_name">
+                            <p>oi</p>
+                        </div>
+                        <div class="task_desc">
+                            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
