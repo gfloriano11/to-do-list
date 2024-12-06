@@ -74,8 +74,24 @@
             </div>
         </section>
         <section id="tasks">
+            <?php 
+                include_once '../backend/database/db.php';
+
+                $query = "SELECT * FROM task";
+
+                $result = $conn->query($query);
+            ?>
+
             <div class="task_container">
-                <
+                <div class="check">
+                    <input type="checkbox" style="border-radius: 20px">
+                </div>
+                <div class="task_name">
+                    <p>oi</p>
+                </div>
+                <div class="task_desc">
+                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                </div>
             </div>
         </section>
     </section>
