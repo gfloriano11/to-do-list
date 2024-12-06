@@ -85,7 +85,8 @@
             <div class="task_container">
                 <div class="task" style="display: flex;">
                     <div class="check">
-                        <input type="checkbox" style="border-radius: 20px">
+                        <label for="check"></label>
+                        <input type="checkbox" name="check">
                     </div>
                     <div class="info_container">
                         <div class="task_name">
