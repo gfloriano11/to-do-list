@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="../../other/images/check-icon.png">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/application.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check">
     <script async src="script/add_task.js"></script>
     <!-- https://todoist.com/pt-BR -> site referencial -->
     <title>To do List</title>
@@ -85,15 +86,27 @@
             <div class="task_container">
                 <div class="task" style="display: flex;">
                     <div class="check">
-                        <label for="check"></label>
-                        <input type="checkbox" name="check">
+                    <label>
+                        <input type="checkbox" name="subscribe" value="yes">
+                        <span class="material-symbols-outlined check_icon">check</span>
+                    </label>
                     </div>
                     <div class="info_container">
-                        <div class="task_name">
-                            <p>oi</p>
+                        <div>
+                            <div class="task_name">
+                                <p>oi</p>
+                            </div>
+                            <div class="task_desc">
+                                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                            </div>
                         </div>
-                        <div class="task_desc">
-                            <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                        <div class="">
+                            <div class="priority">
+                                <p>Baixa</p>
+                            </div>
+                            <div class="final_date">
+                                <p>07/12/2024</p>
+                            </div>
                         </div>
                     </div>
                 </div>
