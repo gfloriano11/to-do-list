@@ -298,4 +298,49 @@
     align-items: center;
 }
 
-/* fazer check pelo js */
+.check{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    max-width: 50px;
+    max-height: 50px;
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 50px;
+}
+
+.check:hover{
+    .check_icon{
+        color: rgb(128, 128, 128);
+        font-size: 30px;
+        opacity: 1;
+    }
+}
+
+.clicked_check{
+    .check_icon{
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        opacity: 1;
+    }
+}
+
+.check_icon{
+    transition: all 0.3s ease;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    opacity: 0;
+}
+
+.texts.text_checked:hover{
+    & .check_icon{
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        opacity: 0;
+    }
+}
+
+/* ver essa questão de desativar hover após clickar no check */

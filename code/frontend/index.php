@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../../other/images/check-icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/application.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check">
     <script async src="script/add_task.js"></script>
+    <script async src="script/confirm_task.js"></script>
     <!-- https://todoist.com/pt-BR -> site referencial -->
     <title>To do List</title>
 </head>
@@ -85,14 +86,13 @@
 
             <div class="task_container">
                 <div class="task" style="display: flex;">
-                    <div class="check">
-                    <label>
-                        <input type="checkbox" name="subscribe" value="yes">
-                        <span class="material-symbols-outlined check_icon">check</span>
-                    </label>
+                    <div class="check_container">
+                        <div class="check">
+                            <span class="material-symbols-outlined check_icon">check</span>
+                        </div>
                     </div>
                     <div class="info_container">
-                        <div>
+                        <div class="texts">
                             <div class="task_name">
                                 <p>oi</p>
                             </div>
