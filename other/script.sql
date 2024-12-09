@@ -24,3 +24,8 @@ INSERT INTO folder
 (folder_name)
 VALUES
 ('geral');
+
+INSERT INTO folder
+(folder_name)
+VALUES
+('concluidas')
