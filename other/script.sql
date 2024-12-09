@@ -28,4 +28,4 @@ VALUES
 INSERT INTO folder
 (folder_name)
 VALUES
-('concluidas')
+('concluidas');

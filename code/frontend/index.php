@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/application.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script async src="script/add_task.js"></script>
     <script async src="script/confirm_task.js"></script>
     <!-- https://todoist.com/pt-BR -> site referencial -->
@@ -31,9 +32,9 @@
                 </button>
             </div>
         </section>
-        <section id="form">
+        <section class="form">
             <div class="form_container">
-                <div class="form_task hide"  style="z-index: +10;">
+                <div class="form_task hide">
                     <form method="POST" action="../backend/create/create_task.php" autocomplete="off">
                         <div>
                             <div id="info">
@@ -94,9 +95,11 @@
                     <div class="info_container">
                         <div class="texts">
                             <div class="task_name">
+                                <div></div>
                                 <p>oi</p>
                             </div>
                             <div class="task_desc">
+                                <div></div>
                                 <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
                             </div>
                         </div>
