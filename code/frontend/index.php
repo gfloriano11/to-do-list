@@ -101,7 +101,7 @@
                                 <p>tenho que falar com o aislan sobre a questão da metalife, verificar como vai funcionar a criação do crm</p>
                             </div>
                         </div>
-                        <div class="">
+                        <div class="other_container">
                             <div class="priority">
                                 <p>Baixa</p>
                             </div>

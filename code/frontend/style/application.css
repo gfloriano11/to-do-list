@@ -349,12 +349,13 @@
 }
 
 .task{
+    padding: 15px 15px 15px 15px;
     margin-top: 5vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     max-width: 100%;
-    min-width: 350px;
+    min-width: 250px;
     max-width: 700px;
     min-height: 100px;
     border: 1px solid rgb(177, 177, 177);
@@ -362,10 +363,24 @@
     background-color: rgb(247, 247, 247);
 }
 
-.task_desc{
-    max-width: 300px;
+.check_container{
+    margin-right: 15px;
 }
 
 .info_container{
     font-family: var(--font-family);
 }
+
+.task_desc{
+    max-width: 300px;
+}
+
+.other_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    /* min-width: 350px; -> arrumar esse min width*/
+    max-width: 700px;
+}
+
