@@ -86,7 +86,7 @@
             ?>
 
             <div class="task_container">
-                <div class="task" style="display: flex;">
+                <div class="task">
                     <div class="check_container">
                         <div class="check">
                             <span class="material-symbols-outlined check_icon">check</span>
@@ -95,12 +95,10 @@
                     <div class="info_container">
                         <div class="texts">
                             <div class="task_name">
-                                <div></div>
                                 <p>oi</p>
                             </div>
                             <div class="task_desc">
-                                <div></div>
-                                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                                <p>tenho que falar com o aislan sobre a questão da metalife, verificar como vai funcionar a criação do crm</p>
                             </div>
                         </div>
                         <div class="">

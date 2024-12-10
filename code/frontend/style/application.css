@@ -347,3 +347,25 @@
     font-size: 30px;
     opacity: 0;
 }
+
+.task{
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    min-width: 350px;
+    max-width: 700px;
+    min-height: 100px;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 20px;
+    background-color: rgb(247, 247, 247);
+}
+
+.task_desc{
+    max-width: 300px;
+}
+
+.info_container{
+    font-family: var(--font-family);
+}

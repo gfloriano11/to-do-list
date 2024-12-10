@@ -8,4 +8,8 @@
 
     $result = $conn->query($query);
 
+    if($result){
+        echo 'deu bom';
+    }
+
     
