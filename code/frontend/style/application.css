@@ -371,12 +371,18 @@
     font-family: var(--font-family);
 }
 
+.task_name{
+    font-weight: 500;
+    font-size: 20px;
+}
+
 .task_desc{
     margin-top: 2vh;
     max-width: 300px;
 }
 
 .other_container{
+    user-select: none;
     margin-top: 2vh;
     display: flex;
     justify-content: left;
@@ -387,5 +393,5 @@
 }
 
 .final_date{
-    margin-left: 10vh;
+    margin-left: 6vh;
 }
