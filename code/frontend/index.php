@@ -1,3 +1,13 @@
+<?php 
+
+    include_once '../backend/database/db.php';
+
+    $query = "SELECT * FROM task";
+
+    $result = $conn->query($query);
+
+?>
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
@@ -77,14 +87,11 @@
             </div>
         </section>
         <section id="tasks">
-            <!-- <?php 
-                include_once '../backend/database/db.php';
 
-                $query = "SELECT * FROM task";
+            <?php
 
-                $result = $conn->query($query);
-            ?> -->
-
+                if($result -> num_rows > 0){
+                    while($row = $result->fetch_assoc()){ ?>
             <div class="task_container">
                 <div class="task">
                     <div class="check_container">
@@ -95,23 +102,26 @@
                     <div class="info_container">
                         <div class="texts">
                             <div class="task_name">
-                                <p>oi</p>
+                                <p><?php echo $row['task_name']?></p>
                             </div>
                             <div class="task_desc">
-                                <p>tenho que falar com o aislan sobre a questão da metalife, verificar como vai funcionar a criação do crm</p>
+                                <p><?php echo $row['task_desc']?></p>
                             </div>
                         </div>
                         <div class="other_container">
                             <div class="priority">
-                                <p>Baixa</p>
+                                <p><?php echo $row['priority']?></p>
                             </div>
                             <div class="final_date">
-                                <p>07/12/2024</p>
+                                <p><?php echo $row['final_date']?></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+<?php               }
+                }
+            ?>
         </section>
     </section>
 </body>

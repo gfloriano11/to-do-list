@@ -293,6 +293,7 @@
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -385,7 +386,7 @@
     user-select: none;
     margin-top: 2vh;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     max-width: 100%;
     /* min-width: 350px; -> arrumar esse min width*/
@@ -393,5 +394,5 @@
 }
 
 .final_date{
-    margin-left: 6vh;
+    margin-left: 2vh;
 }
