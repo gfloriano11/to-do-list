@@ -296,6 +296,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5vh;
 }
 
 .check{
@@ -423,5 +424,22 @@
         min-width: 100px;
         max-width: 100%;
         font-family: var(--font-family);
+    }
+
+    .other_container{
+        user-select: none;
+        margin-top: 2vh;
+        display: block;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        max-width: 700px;
+    }
+
+    .final_date{
+        display: flex;
+        margin-top: 2vh;
+        margin-left: 0;
     }
 }
