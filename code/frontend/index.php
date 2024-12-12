@@ -2,9 +2,9 @@
 
     include_once '../backend/database/db.php';
 
-    $query = "SELECT * FROM task";
+    $query = "SELECT *, DATE_FORMAT(final_date, '%d/%m/%Y') AS data_final FROM task";
 
-    $result = $conn->query($query);
+    $result = mysqli_query($conn, $query);
 
 ?>
 
@@ -110,10 +110,12 @@
                         </div>
                         <div class="other_container">
                             <div class="priority">
+                                <p>Prioridade:</p>
                                 <p><?php echo $row['priority']?></p>
                             </div>
                             <div class="final_date">
-                                <p><?php echo $row['final_date']?></p>
+                                <p>Prazo:</p>
+                                <p><?php echo $row['data_final']?></p>
                             </div>
                         </div>
                     </div>
@@ -121,6 +123,8 @@
             </div>
 <?php               }
                 }
+
+                $conn->close();
             ?>
         </section>
     </section>
