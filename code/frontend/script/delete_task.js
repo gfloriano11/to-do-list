@@ -6,4 +6,4 @@ trashCan.forEach((can) => {
             method: 'DELETE'
         })
     })
-})
+});

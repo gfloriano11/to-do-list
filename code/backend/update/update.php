@@ -11,5 +11,3 @@
     if($result){
         echo 'deu bom';
     }
-
-    
