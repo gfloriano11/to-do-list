@@ -358,7 +358,7 @@
     align-items: center;
     min-width: 250px;
     width: 380px;
-    height: 118px;
+    min-height: 118px;
     border: 1px solid rgb(177, 177, 177);
     border-radius: 20px;
     background-color: rgb(247, 247, 247);
@@ -409,6 +409,7 @@
 .icons_container{
     display: flex;
     height: 100%;
+    min-height: 118px;
     align-items: start;
 }
 
@@ -419,6 +420,7 @@
 }
 
 .trash_can{
+    user-select: none;
     cursor: pointer;
     transition: all 0.3s ease;
 }
