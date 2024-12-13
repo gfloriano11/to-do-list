@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../../other/images/check-icon.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/application.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -117,6 +117,11 @@
                                 <p>Prazo:</p>
                                 <p><?php echo $row['data_final']?></p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="icons_container">
+                        <div class="trash_container">
+                            <span class="material-symbols-outlined trash_can">delete</span>
                         </div>
                     </div>
                 </div>

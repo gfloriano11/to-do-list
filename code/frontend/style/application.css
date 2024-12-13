@@ -359,6 +359,7 @@
     min-width: 250px;
     width: 380px;
     min-height: 100px;
+    height: 118px;
     border: 1px solid rgb(177, 177, 177);
     border-radius: 20px;
     background-color: rgb(247, 247, 247);
@@ -405,6 +406,29 @@
     margin-left: 2vh;
 }
 
+.icons_container{
+    display: flex;
+    height: 100%;
+    align-items: start;
+}
+
+.trash_container{
+    display: flex;
+    align-items: start;
+    
+}
+
+.trash_can{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.trash_can:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+}
+
 @media (max-width: 425px){
     .task{
         padding: 15px 15px 15px 15px;
@@ -441,5 +465,10 @@
         display: flex;
         margin-top: 2vh;
         margin-left: 0;
+    }
+
+    .icons_container{
+        user-select: none;
+        height: 150px;
     }
 }
