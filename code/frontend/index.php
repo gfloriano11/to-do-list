@@ -14,14 +14,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../../other/images/check-icon.png">
+    <title>To do List</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/application.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script async src="script/add_task.js"></script>
-    <script async src="script/confirm_task.js"></script>
     <!-- https://todoist.com/pt-BR -> site referencial -->
-    <title>To do List</title>
 </head>
 <body>
     <section id="application">
@@ -93,7 +91,7 @@
                 if($result -> num_rows > 0){
                     while($row = $result->fetch_assoc()){ ?>
             <div class="task_container">
-                <div class="task">
+                <div class="task" data-id="<?php echo $row['id']?>">
                     <div class="check_container">
                         <div class="check">
                             <span class="material-symbols-outlined check_icon">check</span>
@@ -133,5 +131,8 @@
             ?>
         </section>
     </section>
+    <script src="script/add_task.js"></script>
+    <script src="script/check_task.js"></script>
+    <script src="script/delete_task.js"></script>
 </body>
 </html>
