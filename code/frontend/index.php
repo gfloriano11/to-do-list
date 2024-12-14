@@ -28,7 +28,7 @@
     <section id="application">
         <div class="title_container">
             <div id="title">
-                <p>Tarefas - lembra de arrumar o bug de tirar todas as tasks (deletar e mudar pasta)</p>
+                <p>Tarefas</p>
             </div>
         </div>
         <section class="principal">
@@ -54,9 +54,7 @@
                                     <input name="task_name" type="text">
                                 </div>
                                 <div id="desc">
-                                    <div>
-                                        <label for="task_desc">Descrição da Tarefa:</label>
-                                    </div>
+                                    <label for="task_desc">Descrição da Tarefa:</label>
                                     <textarea name="task_desc"></textarea>
                                 </div>
                                 <div id="date">
@@ -122,6 +120,7 @@
                     </div>
                     <div class="icons_container">
                         <div class="trash_container">
+                            <span class="material-symbols-outlined">edit</span>
                             <span class="material-symbols-outlined trash_can">delete</span>
                         </div>
                     </div>

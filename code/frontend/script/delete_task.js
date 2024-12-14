@@ -2,11 +2,9 @@ const trashCan = document.querySelectorAll('.trash_container');
 
 trashCan.forEach((can) => {
 
-    const tasks = document.querySelectorAll('.task');
-
-    tasks.forEach((task) => {
-
         can.addEventListener('click', () => {
+
+            const task = can.closest('.task');
         
             let taskId = task.dataset.id;
     
@@ -16,7 +14,10 @@ trashCan.forEach((can) => {
                 method: 'GET'
             })
     
-            location.reload(true);
+            setTimeout(() => {
+                
+                location.reload(true);
+            
+            }, 2000);
         })
-    })
 });

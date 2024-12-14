@@ -4,32 +4,24 @@ const folder = 2;
 
 checks.forEach((check) => {
 
-    // console.log('olá [estou dentro da 1ª arrow function]')
+    check.addEventListener('click', () => {
 
-    const tasks = document.querySelectorAll('.task');
-
-    tasks.forEach((task) => {
-
-        // console.log('olá [estou dentro da 2ª arrow function]')
-
-        check.addEventListener('click', () => {
+        const task = check.closest('.task');
         
-            check.classList.remove('check');
-            check.classList.add('clicked_check');
+        check.classList.remove('check');
+        check.classList.add('clicked_check');
 
-            let taskId = task.dataset.id;
+        let taskId = task.dataset.id;
 
-            fetch(`../backend/update/update_folder.php?id=${taskId}&id_folder=${folder}`, {
-                method: 'GET'
-            })
-
-            setTimeout(() => {
-                
-                location.reload(true);
-        
-            }, 1000);
-
-
+        fetch(`../backend/update/update_folder.php?id=${taskId}&id_folder=${folder}`, {
+            method: 'GET'
         })
+
+        setTimeout(() => {
+                
+            location.reload(true);
+        
+        }, 2000);
+
     })
-})
+});
