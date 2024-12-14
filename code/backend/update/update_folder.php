@@ -19,7 +19,7 @@
 
     if($_SERVER['REQUEST_METHOD'] === 'GET'){
         $id = $_GET['id'];
-        $folder = $_GET['folder'];
+        $folder = $_GET['id_folder'];
 
         $query = "UPDATE task
         SET id_folder = $folder

@@ -19,14 +19,17 @@ checks.forEach((check) => {
 
             let taskId = task.dataset.id;
 
-            fetch(`../backend/update/update_folder.php?id=${taskId}&id_folder=${folder}`), {
+            fetch(`../backend/update/update_folder.php?id=${taskId}&id_folder=${folder}`, {
                 method: 'GET'
-            }
-    
-            location.reload(true);
+            })
 
             setTimeout(() => {
+                
+                location.reload(true);
+        
             }, 1000);
+
+
         })
     })
 })

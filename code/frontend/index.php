@@ -2,9 +2,12 @@
 
     include_once '../backend/database/db.php';
 
-    $query = "SELECT *, DATE_FORMAT(final_date, '%d/%m/%Y') AS data_final FROM task";
+    $query = "SELECT *, 
+    DATE_FORMAT(final_date, '%d/%m/%Y') 
+    AS data_final FROM task
+    WHERE id_folder = 1";
 
-    $result = mysqli_query($conn, $query);
+    $result = $conn->query($query);
 
 ?>
 
@@ -25,7 +28,7 @@
     <section id="application">
         <div class="title_container">
             <div id="title">
-                <p>Tarefas</p>
+                <p>Tarefas - lembra de arrumar o bug de tirar todas as tasks (deletar e mudar pasta)</p>
             </div>
         </div>
         <section class="principal">
