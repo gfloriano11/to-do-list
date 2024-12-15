@@ -43,10 +43,52 @@
                 </button>
             </div>
         </section>
-        <section class="form">
+        <section class="form"> <!-- create task form -->
             <div class="form_container">
                 <div class="form_task hide">
                     <form method="POST" action="../backend/create/create_task.php" autocomplete="off">
+                        <div>
+                            <div id="info">
+                                <div id="name"> 
+                                    <label for="task_name">Nome da Tarefa:</label>
+                                    <input name="task_name" type="text">
+                                </div>
+                                <div id="desc">
+                                    <label for="task_desc">Descrição da Tarefa:</label>
+                                    <textarea name="task_desc"></textarea>
+                                </div>
+                                <div id="date">
+                                    <label for="final_date">Data Final:</label>
+                                    <input name="final_date" type="date">
+                                </div>
+                                <div id="priority">
+                                    <label for="priority">Prioridade:</label>
+                                    <select name="priority">
+                                        <option>Baixa</option>
+                                        <option>Média</option>
+                                        <option>Alta</option>
+                                    </select>
+                                </div>
+                                <div id="folder">
+                                    <label for="folder">Pasta:</label>
+                                    <select name="folder">
+                                        <option value="geral">Geral</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <button class="cancel_button" type="button">Cancelar</button>
+                                <button class="create_button">Criar Tarefa</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="edit_form"> <!-- edit task form -->
+            <div class="form_container">
+                <div class="edit_task hide">
+                    <form method="POST" action="../backend/update/update_task.php" autocomplete="off">
                         <div>
                             <div id="info">
                                 <div id="name"> 
@@ -140,5 +182,6 @@
     <script src="script/add_task.js"></script>
     <script src="script/check_task.js"></script>
     <script src="script/delete_task.js"></script>
+    <script src="script/edit_task.js"></script>
 </body>
 </html>
