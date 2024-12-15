@@ -67,3 +67,8 @@ html, body{
     font-family: var(--font-family);
     font-size: 20px;
 }
+
+.vertical_center{
+    display: flex;
+    align-items: center;
+}

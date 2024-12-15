@@ -93,34 +93,38 @@
                     while($row = $result->fetch_assoc()){ ?>
             <div class="task_container">
                 <div class="task" data-id="<?php echo $row['id']?>">
-                    <div class="check_container">
-                        <div class="check">
-                            <span class="material-symbols-outlined check_icon">check</span>
-                        </div>
-                    </div>
-                    <div class="info_container">
-                        <div class="texts">
-                            <div class="task_name">
-                                <p><?php echo $row['task_name']?></p>
-                            </div>
-                            <div class="task_desc">
-                                <p><?php echo $row['task_desc']?></p>
+                    <div class="vertical_center">
+                        <div class="check_container">
+                            <div class="check">
+                                <span class="material-symbols-outlined check_icon">check</span>
                             </div>
                         </div>
-                        <div class="other_container">
-                            <div class="priority">
-                                <p>Prioridade:</p>
-                                <p><?php echo $row['priority']?></p>
+                        <div class="info_container">
+                            <div class="texts">
+                                <div class="task_name">
+                                    <p><?php echo $row['task_name']?></p>
+                                </div>
+                                <div class="task_desc">
+                                    <p><?php echo $row['task_desc']?></p>
+                                </div>
                             </div>
-                            <div class="final_date">
-                                <p>Prazo:</p>
-                                <p><?php echo $row['data_final']?></p>
+                            <div class="other_container">
+                                <div class="priority">
+                                    <p>Prioridade:</p>
+                                    <p><?php echo $row['priority']?></p>
+                                </div>
+                                <div class="final_date">
+                                    <p>Prazo:</p>
+                                    <p><?php echo $row['data_final']?></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="icons_container">
+                        <div class="edit_container">
+                            <span class="material-symbols-outlined pencil">edit</span>
+                        </div>
                         <div class="trash_container">
-                            <span class="material-symbols-outlined">edit</span>
                             <span class="material-symbols-outlined trash_can">delete</span>
                         </div>
                     </div>

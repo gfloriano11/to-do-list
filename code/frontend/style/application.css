@@ -355,7 +355,6 @@
     margin-top: 5vh;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     min-width: 250px;
     width: 380px;
     min-height: 118px;
@@ -370,7 +369,7 @@
 }
 
 .info_container{
-    min-width: 300px;
+    min-width: 280px;
     max-width: 100%;
     font-family: var(--font-family);
 }
@@ -413,12 +412,6 @@
     align-items: start;
 }
 
-.trash_container{
-    display: flex;
-    align-items: start;
-    
-}
-
 .trash_can{
     user-select: none;
     cursor: pointer;
@@ -431,13 +424,24 @@
     transform: scale(1.2);
 }
 
+.pencil{
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pencil:hover{
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: scale(1.2);
+}
+
 @media (max-width: 425px){
     .task{
         padding: 15px 15px 15px 15px;
         margin-top: 5vh;
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
         min-width: 250px;
         width: 260px;
         min-height: 150px;
