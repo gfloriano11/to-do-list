@@ -119,8 +119,8 @@
                                 </div>
                             </div>
                             <div class="buttons">
-                                <button class="cancel_button" type="button">Cancelar</button>
-                                <button class="create_button">Criar Tarefa</button>
+                                <button class="cancel_button edit_cancel" type="button">Cancelar</button>
+                                <button class="create_button">Editar Tarefa</button>
                             </div>
                         </div>
                     </form>
