@@ -489,11 +489,32 @@
 
 @media (max-width: 395px){
 
+    #name{
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    
+        & label{
+            font-family: var(--font-family);
+        }
+    
+        & input{
+            padding: 5px 5px 5px 5px;
+            font-family: var(--font-family);
+            border: 1px solid rgb(60, 60, 60);
+            border-radius: 12px;
+            width: 150px;
+            height: 20px;
+            background-color: rgb(255, 255, 255);
+    
+        }
+    }
+    
     #desc{
         display: block;
-        align-items: center;
         width: 100%;
         max-width: 360px;
+        text-align: center;
     
         & label{
             font-family: var(--font-family);
@@ -512,4 +533,82 @@
             background-color: rgb(255, 255, 255);
         }
     }
+    
+    ::-webkit-input-placeholder{
+        color: rgb(0, 0, 0);
+        font-weight: 500;   
+    
+        /* serve pra mudar o placeholder dos inputs */
+    }
+    
+    #date{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    
+        & label{
+            font-family: var(--font-family);
+            margin-left: 0px;
+        }
+    
+        & input{
+            padding: 5px 5px 5px 5px;
+            font-family: var(--font-family);
+            border: 1px solid rgb(60, 60, 60);
+            border-radius: 12px;
+            width: 145px;
+            height: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+    
+    #priority{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+    
+        & label{
+            font-family: var(--font-family);
+            margin-left: 0px;
+        }
+    
+        & select{
+            padding: 5px 5px 5px 5px;
+            font-family: var(--font-family);
+            border: 1px solid rgb(60, 60, 60);
+            border-radius: 12px;
+            width: 155px;
+            height: 30px;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+    
+    #folder{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+    
+        & label{
+            font-family: var(--font-family);
+            margin-left: 0px;
+        }
+    
+        & select{
+            padding: 5px 5px 5px 5px;
+            font-family: var(--font-family);
+            border: 1px solid rgb(60, 60, 60);
+            border-radius: 12px;
+            width: 155px;
+            height: 30px;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+
 }
