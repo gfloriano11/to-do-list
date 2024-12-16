@@ -21,7 +21,7 @@ checks.forEach((check) => {
                 
             location.reload(true);
         
-        }, 2000);
+        }, 1000);
 
     })
 });

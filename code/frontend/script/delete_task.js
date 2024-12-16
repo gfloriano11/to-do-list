@@ -18,6 +18,6 @@ trashCan.forEach((can) => {
                 
                 location.reload(true);
             
-            }, 2000);
+            }, 1000);
         })
 });
