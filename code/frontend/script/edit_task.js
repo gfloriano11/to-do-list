@@ -32,15 +32,15 @@ pencils.forEach((pencil) => {
                 return response.json()
             })
             .then(data => {
-                const taskName = document.querySelector('input[name="task_name"]');
-                const taskDesc = document.querySelector('textarea[name="task_name"]');
-                const finalDate = document.querySelector('input[name="final_date"]');
-                const priority = document.querySelector('select[name="priority"]');
+                // let taskName = document.querySelector('input[name="task_name"]').value;
+                // let taskDesc = document.querySelector('textarea[name="task_name"]').value;
+                // let finalDate = document.querySelector('input[name="final_date"]').value;
+                // let priority = document.querySelector('select[name="priority"]').value;
 
-                taskName.value = data.task_name;
-                taskDesc.value = data.task_desc;
-                finalDate.value = data.final_date;
-                priority.value = data.priority;
+                document.querySelector('input[name="edit_task_name"]').value = data.task_name;
+                document.querySelector('textarea[name="edit_task_desc"]').value = data.task_desc;
+                document.querySelector('input[name="edit_final_date"]').value = data.final_date;
+                document.querySelector('select[name="edit_priority"]').value = data.priority;
             })
             .catch(error => console.log('Erro ao buscar dados: ' , error));
     });

@@ -6,7 +6,7 @@
         $id = $_GET['id'];
 
         $query = "SELECT *,
-        DATE_FORMAT(final_date, '%d%m%Y')
+        DATE_FORMAT(final_date, '%Y-%m-%d')
         AS data_final FROM task
         WHERE id = $id";
 

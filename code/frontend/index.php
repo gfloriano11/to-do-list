@@ -9,6 +9,9 @@
 
     $result = $conn->query($query);
 
+    $edit_query = "SELECT * FROM task
+    WHERE id = "
+
 ?>
 
 <!DOCTYPE html>
@@ -93,19 +96,19 @@
                             <div id="info">
                                 <div id="name"> 
                                     <label for="task_name">Nome da Tarefa:</label>
-                                    <input name="task_name" type="text">
+                                    <input name="edit_task_name" type="text" value="<?php echo ''; ?>">
                                 </div>
                                 <div id="desc">
                                     <label for="task_desc">Descrição da Tarefa:</label>
-                                    <textarea name="task_desc"></textarea>
+                                    <textarea name="edit_task_desc"></textarea>
                                 </div>
                                 <div id="date">
                                     <label for="final_date">Data Final:</label>
-                                    <input name="final_date" type="date">
+                                    <input name="edit_final_date" type="date">
                                 </div>
                                 <div id="priority">
                                     <label for="priority">Prioridade:</label>
-                                    <select name="priority">
+                                    <select name="edit_priority">
                                         <option>Baixa</option>
                                         <option>Média</option>
                                         <option>Alta</option>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../../other/images/check-icon.png">
+    <link rel="icon" type="image/png" href="../../../other/images/check-icon.png">
     <link rel="stylesheet" href="../../frontend/style/global.css">
     <link rel="stylesheet" href="../../frontend/style/application.css">
     <title>Erro</title>
@@ -28,7 +28,11 @@
             $folder = 1;
         }
 
-        if($task_name != null){
+        if ($final_date == '' || $final_date == "0000-00-00") {
+            $final_date = null;
+        }
+
+        if($task_name != null && $final_date != null){
             $query = "INSERT INTO task
             (task_name, task_desc, final_date, priority, id_folder)
             VALUES 
@@ -52,7 +56,7 @@
         } else{ ?>
             <div class="flex_container">
                 <div class="flex">
-                    <?php echo 'Erro: Nome da Tarefa Vazio 😥'; ?>
+                    <?php echo 'Erro: Campo da Tarefa Vazio 😥'; ?>
                     <a class="go_back_button" href="../../frontend/index.php">Voltar</a>
                 </div>
             </div>
