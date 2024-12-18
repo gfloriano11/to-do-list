@@ -91,7 +91,7 @@
         <section class="edit_form"> <!-- edit task form -->
             <div class="form_container">
                 <div class="edit_task hide">
-                    <form method="POST" action="../backend/update/update_task.php" autocomplete="off">
+                    <div method="PUT" action="../backend/update/update_task.php" autocomplete="off">
                         <div>
                             <div id="info">
                                 <div id="name"> 
@@ -123,10 +123,10 @@
                             </div>
                             <div class="buttons">
                                 <button class="cancel_button edit_cancel" type="button">Cancelar</button>
-                                <button class="create_button">Editar Tarefa</button>
+                                <button class="create_button edit_button">Editar Tarefa</button>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -185,6 +185,7 @@
     <script src="script/add_task.js"></script>
     <script src="script/check_task.js"></script>
     <script src="script/delete_task.js"></script>
+    <script src="script/get_task.js"></script>
     <script src="script/edit_task.js"></script>
 </body>
 </html>
