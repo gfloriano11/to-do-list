@@ -5,7 +5,8 @@
     $query = "SELECT *, 
     DATE_FORMAT(final_date, '%d/%m/%Y') 
     AS data_final FROM task
-    WHERE id_folder = 1";
+    WHERE id_folder = 1
+    ORDER BY id DESC";
 
     $result = $conn->query($query);
 

@@ -7,14 +7,18 @@ pencils.forEach((pencil) => {
 
     pencil.addEventListener('click', () => {
 
-        editForm.classList.remove('hide');
-        editForm.classList.add('central');
-        titleContainer.classList.add('opacidade');
-        principal.classList.add('opacidade');
-        body.style.overflow = 'hidden';
         setTimeout(() => {
-            body.scrollTo({top: 0, behavior: 'smooth'});
-        }, 0);
+
+            editForm.classList.remove('hide');
+            editForm.classList.add('central');
+            titleContainer.classList.add('opacidade');
+            principal.classList.add('opacidade');
+            taskContainer.classList.add('opacidade');
+            body.style.overflow = 'hidden';
+
+        }, 300)
+
+        body.scrollTo({top: 0, behavior: 'smooth'});
 
         const task = pencil.closest('.task');
 
@@ -52,6 +56,8 @@ editCancelButton.addEventListener('click', () => {
     editForm.classList.remove('central');
     titleContainer.classList.remove('opacidade');
     principal.classList.remove('opacidade');
+    taskContainer.classList.remove('opacidade');
     body.style.overflow = '';
+    
 })
 
