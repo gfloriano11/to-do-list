@@ -1,4 +1,4 @@
- <h1>To-do List App</h1>
+<h1>To-do List App</h1>
 
 <p>A simple to-do list build with HTML, CSS, JS, PHP and MySQL in Brazilian Portuguese. This app allow user to create, view, update, conclude and delete their tasks!
 The tasks have a name, description, final date and can be choose three priorities (Low, Medium and High). </p>
