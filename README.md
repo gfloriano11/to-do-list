@@ -11,7 +11,7 @@ The tasks have a name, description, final date and can be choose three prioritie
 <li>Delete tasks</li>
 <li>Conclude tasks</li>
 
-<h2>Tecnologies:</h2>
+<h2>Technologies:</h2>
 
 <li>HTML</li>
 <li>CSS</li>
