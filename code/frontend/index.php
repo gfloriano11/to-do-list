@@ -10,8 +10,8 @@
 
     $result = $conn->query($query);
 
-    $edit_query = "SELECT * FROM task
-    WHERE id = "
+    // $edit_query = "SELECT * FROM task
+    // WHERE id = "
 
 ?>
 
@@ -92,12 +92,12 @@
         <section class="edit_form"> <!-- edit task form -->
             <div class="form_container">
                 <div class="edit_task hide">
-                    <div method="PUT" action="../backend/update/update_task.php" autocomplete="off">
+                    <div method="POST" action="../backend/update/update_task.php" autocomplete="off">
                         <div>
                             <div id="info">
                                 <div id="name"> 
                                     <label for="task_name">Nome da Tarefa:</label>
-                                    <input name="edit_task_name" type="text" value="<?php echo ''; ?>">
+                                    <input name="edit_task_name" type="text">
                                 </div>
                                 <div id="desc">
                                     <label for="task_desc">Descrição da Tarefa:</label>
@@ -108,7 +108,7 @@
                                     <input name="edit_final_date" type="date">
                                 </div>
                                 <div id="priority">
-                                    <label for="priority">Prioridade:</label>
+                                    <label for="edit_priority">Prioridade:</label>
                                     <select name="edit_priority">
                                         <option>Baixa</option>
                                         <option>Média</option>
@@ -116,8 +116,8 @@
                                     </select>
                                 </div>
                                 <div id="folder">
-                                    <label for="folder">Pasta:</label>
-                                    <select name="folder">
+                                    <label for="edit_folder">Pasta:</label>
+                                    <select name="edit_folder">
                                         <option value="geral">Geral</option>
                                     </select>
                                 </div>

@@ -45,6 +45,7 @@ pencils.forEach((pencil) => {
                 document.querySelector('textarea[name="edit_task_desc"]').value = data.task_desc;
                 document.querySelector('input[name="edit_final_date"]').value = data.final_date;
                 document.querySelector('select[name="edit_priority"]').value = data.priority;
+                document.querySelector('select[name="folder"]').value = data.folder;
             })
             .catch(error => console.log('Erro ao buscar dados: ' , error));
     });
