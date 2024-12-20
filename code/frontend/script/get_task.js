@@ -24,8 +24,6 @@ pencils.forEach((pencil) => {
 
         taskId = task.dataset.id;
 
-        console.log(`ID da task: ${taskId}`);
-
         fetch(`../backend/read/get_task.php?id=${taskId}` ,{
             method: 'GET'
         })
@@ -36,16 +34,13 @@ pencils.forEach((pencil) => {
                 return response.json()
             })
             .then(data => {
-                // let taskName = document.querySelector('input[name="task_name"]').value;
-                // let taskDesc = document.querySelector('textarea[name="task_name"]').value;
-                // let finalDate = document.querySelector('input[name="final_date"]').value;
-                // let priority = document.querySelector('select[name="priority"]').value;
 
                 document.querySelector('input[name="edit_task_name"]').value = data.task_name;
                 document.querySelector('textarea[name="edit_task_desc"]').value = data.task_desc;
                 document.querySelector('input[name="edit_final_date"]').value = data.final_date;
                 document.querySelector('select[name="edit_priority"]').value = data.priority;
                 document.querySelector('select[name="folder"]').value = data.folder;
+                
             })
             .catch(error => console.log('Erro ao buscar dados: ' , error));
     });

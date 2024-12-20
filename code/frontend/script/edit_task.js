@@ -18,13 +18,10 @@ pencils.forEach((pencil) => {
 
             button.addEventListener('click', () => {
 
-                console.log('botao de edição clicado!')
-
                 let taskName = document.querySelector('input[name="edit_task_name"]').value;
                 let taskDesc = document.querySelector('textarea[name="edit_task_desc"]').value;
                 let finalDate = document.querySelector('input[name="edit_final_date"]').value;
                 let priority = document.querySelector('select[name="edit_priority"]').value;
-                // let folder = document.querySelector('select[name="edit_folder"]').value; 
 
                 fetch(`../backend/update/update_task.php?id=${taskId}&task_name=${taskName}&task_desc=${taskDesc}&final_date=${finalDate}&priority=${priority}`),{
                     method: 'GET'

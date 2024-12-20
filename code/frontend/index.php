@@ -73,12 +73,12 @@
                                         <option>Alta</option>
                                     </select>
                                 </div>
-                                <!-- <div id="folder">
+                                <div id="folder">
                                     <label for="folder">Pasta:</label>
                                     <select name="folder">
                                         <option value="geral">Geral</option>
                                     </select>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="buttons">
                                 <button class="cancel_button" type="button">Cancelar</button>

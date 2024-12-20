@@ -8,8 +8,6 @@ trashCan.forEach((can) => {
         
             let taskId = task.dataset.id;
     
-            console.log(`Id da tarefa: ${taskId}`);
-    
             fetch(`../backend/delete/delete_task.php?id=${taskId}`, {
                 method: 'GET'
             })
